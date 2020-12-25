@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --white: #fff;
+  --light-grey: #7d9096;
+  --body-light-green: #03ef8e;
+  --body-dark-green: #1a8c5e;
+  --card-light-green: #67e49b;
+  --card-dark-green: #18b853;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    120deg,
+    var(--body-light-green) 0%,
+    var(--body-dark-green) 100%
+  );
+  background-blend-mode: multiply, multiply;
+
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.6;
+
+  -webkit-user-select: none;
+}
+
+.small-text {
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: var(--white);
+}
+
+.thick-text {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--white);
+}
+
+/* Container */
+
+.container {
+  display: flex;
+}
+
+/* Subscription  */
+
+.subscription {
+  background-image: linear-gradient(
+    150deg,
+    var(--card-light-green) 0%,
+    var(--card-dark-green) 100%
+  );
+
+  border-radius: 1rem 0 0 1rem;
+  padding: 10rem;
+
+  box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.22);
+}
+
+/* Subscription - Title  */
+
+.subscription__title {
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.subscription__title--2 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.subscription .subscription__price {
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: var(--white);
+  margin-left: 2rem;
+}
+
+.subscription .subscription__info {
+  line-height: 2.8;
+  margin: 1rem 0;
+}
+
+.subscription .subscription__info li {
+  font-weight: 500;
+  margin-left: 4rem;
+  font-size: 1.6rem;
+  color: var(--white);
+  letter-spacing: 0.05rem;
+}
+
+.subscription .mini-info {
+  margin-left: 2rem;
+  line-height: 2;
+  letter-spacing: 0.07rem;
+}
+
+/* Sign Up */
+
+.sign-up {
+  background-image: linear-gradient(150deg, #306576 0%, #10262d 100%);
+  border-radius: 0 1rem 1rem 0;
+  padding: 10rem;
+
+  box-shadow: 0.2rem 0.2rem 2rem rgba(0, 0, 0, 0.364);
+}
+
+/* Logo */
+
+.sign-up .logo {
+  color: var(--white);
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.sign-up .logo .fa-spotify {
+  color: var(--white);
+  font-size: 5rem;
+}
+
+/* Sign Up - Title */
+
+.sign-up .sign-up__title {
+  font-size: 1.8rem;
+  color: var(--white);
+  margin-bottom: 3rem;
+}
+
+.sign-up .sign-up__title .small-text {
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+.sign-up .sign-up__title .green-line {
+  color: var(--body-light-green);
+}
+
+/* Sign Up Form */
+
+#form .form-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.form-input label {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  color: var(--white);
+}
+
+.form-input input {
+  background: none;
+  border: none;
+  border-bottom: 0.1rem solid var(--light-grey);
+  padding: 0.5rem 0;
+  width: 30rem;
+  color: var(--white);
+}
+
+.form-input input[type="password"] {
+  position: relative;
+}
+
+.form-input .fa-eye {
+  font-size: 1.4rem;
+  margin-left: 22rem;
+  bottom: 40rem;
+  position: absolute;
+  cursor: pointer;
+  z-index: 100rem;
+  color: var(--light-grey);
+}
+
+/* Sign Up Form Terms And Cnditionals */
+
+.form-terms {
+  margin-top: -1rem;
+  margin-bottom: 5rem;
+}
+
+.form-terms input[type="checkbox"] {
+  margin-right: 0.5rem;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.form-terms label {
+  font-size: 1rem;
+  color: var(--light-grey);
+  letter-spacing: 0.05rem;
+}
+
+.form-terms label .thick-underline {
+  font-weight: 500;
+  color: var(--white);
+  text-decoration: var(--card-light-green) underline dotted;
+}
+
+/* Sign Up Form Button */
+
+#form #btn {
+
+font-family: "Noto Sans JP", sans-serif;
+font-size: 1.3rem;
+font-weight: 600;
+padding: .8rem 1.3em;
+border-radius: 3rem;
+background-color: var(--white);
+border: var(--white) .1rem solid;
+margin-left: 11rem;
+cursor: pointer;
+color: #10262d;
+box-shadow: 0.2rem 0.2rem 2rem rgba(19, 19, 19, 0.364);
+transition: all .3s ease;
+}
